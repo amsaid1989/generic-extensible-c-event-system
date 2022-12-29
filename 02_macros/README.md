@@ -48,21 +48,21 @@ void score_updated_listener(ScoreUpdated event) {
 int main(int argc, char *argv[]) {
   EventManager manager = {};
 
-	// 1) ADDING AN EVENT LISTENER
+  // 1) ADDING AN EVENT LISTENER
 
-	// FUNCTION FORMAT
+  // FUNCTION FORMAT
   add_event_listener_ScoreUpdated(&manager, score_updated_listener);
 
-	// HELPER MACRO FORMAT
+  // HELPER MACRO FORMAT
   // add_event_listener(ScoreUpdated)(&manager, score_updated_listener);
 
 
-	// 2) EMITTING AN EVENT
+  // 2) EMITTING AN EVENT
 
-	// FUNCTION FORMAT
+  // FUNCTION FORMAT
   emit_event_ScoreUpdated(&manager, (ScoreUpdated){.score = 50});
 
-	// HELPER MACRO FORMAT
+  // HELPER MACRO FORMAT
   // emit_event(ScoreUpdated)(&manager, (ScoreUpdated){.score = 50});
 
 
