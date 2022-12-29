@@ -30,6 +30,6 @@ int main(int argc, char *argv[]) {
 
   emit_event(&manager, ScoreUpdatedEvent, (void *)&ev1);
 
-	return 0;
+  return 0;
 }
 ```
